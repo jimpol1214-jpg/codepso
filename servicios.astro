@@ -1,0 +1,87 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Codepso Legal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <Navbar />
+
+    <main>
+      <section class="services-section">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-scale-balanced service-icon"></i>
+            <h3>Asesoría Legal Integral</h3>
+            <p>
+              Brindamos orientación y acompañamiento legal personalizado en distintas ramas del derecho, garantizando soluciones efectivas.
+            </p>
+            <a href="/contacto">Solicitar Asesoría</a>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-gavel service-icon"></i>
+            <h3>Defensa Judicial</h3>
+            <p>
+              Representamos a nuestros clientes ante los tribunales, defendiendo sus derechos con compromiso y profesionalismo.
+            </p>
+            <a href="/contacto">Contactar Abogado</a>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-briefcase service-icon"></i>
+            <h3>Derecho Laboral</h3>
+            <p>
+              Asistimos tanto a empleadores como trabajadores en la resolución de conflictos laborales y trámites administrativos.
+            </p>
+            <a href="/contacto">Más Información</a>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-building-columns service-icon"></i>
+            <h3>Asesoría Empresarial</h3>
+            <p>
+              Apoyamos a las empresas con soluciones legales estratégicas para cumplir normativas y prevenir contingencias legales.
+            </p>
+            <a href="/contacto">Hablar con un Especialista</a>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-people-roof service-icon"></i>
+            <h3>Derecho Civil y Familia</h3>
+            <p>
+              Atendemos casos de divorcio, herencias, contratos, y otros asuntos civiles con discreción y empatía.
+            </p>
+            <a href="/contacto">Solicitar Consulta</a>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-file-signature service-icon"></i>
+            <h3>Trámites Notariales</h3>
+            <p>
+              Facilitamos gestiones notariales, redacción de documentos y legalización de trámites con rapidez y transparencia.
+            </p>
+            <a href="/contacto">Agendar Trámite</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+    <WhatsAppButton />
+  </body>
+</html>

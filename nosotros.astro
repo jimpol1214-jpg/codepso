@@ -1,0 +1,125 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros | Codepso Legal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <Navbar />
+
+    <main>
+      <section class="about-hero">
+        <div class="about-content">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            En <strong>Codepso Legal</strong> brindamos soluciones jurídicas integrales, 
+            combinando conocimiento legal, ética profesional y tecnología moderna para defender tus derechos.
+          </p>
+        </div>
+      </section>
+      <section class="content-nosotros">
+        <div class="about">
+          <h2>¿Quiénes Somos?</h2>
+          <p>
+            En <strong>Codepso Legal</strong> somos un equipo comprometido con brindar soluciones legales integrales. 
+            Nuestra experiencia y profesionalismo nos permiten ofrecer asesoría confiable, transparente y adaptada a las necesidades de cada cliente.
+          </p>
+        </div>
+
+        <div class="mision-vision">
+          <div class="mision">
+            <h2>Misión</h2>
+            <p>
+              Proporcionar soluciones jurídicas integrales a nuestros clientes de forma transparente, 
+              eficiente, confiable y de manera oportuna, a través de un equipo profesional multidisciplinario 
+              con los más altos estándares de calidad y ética.
+            </p>
+          </div>
+
+          <div class="vision">
+            <h2>Visión</h2>
+            <p>
+              Ser reconocida como la consultora jurídica líder de Cajamarca, por su capacidad de solucionar oportunamente 
+              y reducir las contingencias de nuestros clientes, en armonía con sus objetivos y necesidades. 
+            </p>
+          </div>
+        </div>
+            </section>
+
+      <section class="about-values">
+        <h2>Nuestros Valores</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h3>Compromiso</h3>
+            <p>
+              Acompañamos a nuestros clientes en cada etapa de su proceso con 
+              dedicación, responsabilidad y transparencia.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Justicia</h3>
+            <p>
+              Promovemos la defensa justa de los derechos, siempre bajo los principios 
+              de equidad e imparcialidad.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Innovación</h3>
+            <p>
+              Aplicamos herramientas tecnológicas y soluciones creativas para 
+              optimizar la gestión legal y empresarial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-team">
+        <h2>Nuestro Equipo</h2>
+        <p>
+          Contamos con un equipo multidisciplinario de abogados y asesores especializados 
+          en distintas ramas del derecho, comprometidos en brindar un servicio humano, ágil y confiable.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="/assets/team1.jpg" alt="Abogada principal" />
+            <h3>María Torres</h3>
+            <p>Abogada Principal – Derecho Civil y Familiar</p>
+          </div>
+
+          <div class="team-member">
+            <img src="/assets/team2.jpg" alt="Abogado laboral" />
+            <h3>Javier Ruiz</h3>
+            <p>Abogado Laboral y Defensa Judicial</p>
+          </div>
+
+          <div class="team-member">
+            <img src="/assets/team3.jpg" alt="Consultor empresarial" />
+            <h3>Lucía Fernández</h3>
+            <p>Consultora en Derecho Empresarial</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+    <WhatsAppButton />
+  </body>
+</html>
