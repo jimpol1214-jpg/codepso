@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codepso Legal</title>
+  </head>
+  <body>
+    <header>
+      <h2>Codepso Legal</h2>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/nosotros">Nosotros</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>© 2025 Codepso Legal. Todos los derechos reservados.</p>
+      <nav>
+        <a href="/nosotros">Nosotros</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </footer>
+  </body>
+</html>

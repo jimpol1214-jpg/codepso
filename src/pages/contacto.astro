@@ -1,0 +1,92 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Codepso Legal</title>
+   
+
+      <!-- Íconos Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-od5hI6URrC+nKFrUJ9LwUw9KHHu1fUn6S1hBwc3oZ1zCqBYrQ9AD2P6zAfxcXvO1W6Exzgk1bXmkjY3Jk4r6hA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  </head>
+
+  <body>
+    <Navbar />
+
+    <main>
+      <section class="hero">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Escríbenos o visítanos.</p>
+      </section>
+
+    <section class="contact-info">
+  <div class="info-item">
+    <i class="fa-solid fa-phone"></i>
+    <p><strong>Teléfono:</strong> +51 999 999 999</p>
+  </div>
+
+  <div class="info-item">
+    <i class="fa-solid fa-envelope"></i>
+    <p><strong>Email:</strong> contacto@codepsolegal.com</p>
+  </div>
+
+  <div class="info-item">
+    <i class="fa-solid fa-location-dot"></i>
+    <p><strong>Dirección:</strong> Jr. Los Abogados 123, Cajamarca</p>
+  </div>
+</section>
+
+
+      <div class="separator"></div>
+
+      <section class="contact-form-section">
+        <h2>Envíanos un mensaje</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Tu nombre" required />
+          <input type="email" placeholder="Tu correo" required />
+          <textarea placeholder="Tu mensaje" rows="5"></textarea>
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i> Enviar mensaje
+          </button>
+        </form>
+      </section>
+
+      <div class="separator"></div>
+
+      <section class="map-section">
+        <h2>Encuéntranos aquí</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.8227225552687!2d-78.5197!3d-7.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25a7ebc1c0b67%3A0x123456789abc!2sCajamarca%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1697800000000!5m2!1ses!2spe"
+          width="100%"
+          height="350"
+          style="border:0; border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </section>
+    </main>
+
+    <Footer />
+    <WhatsAppButton />
+
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+  crossorigin="anonymous"
+></script>
+
+  </body>
+</html>
